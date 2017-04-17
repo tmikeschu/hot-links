@@ -1,24 +1,8 @@
-# README
+# Hot Links
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This application receives data from [this
+application](http://url-lockbox-schutte.herokuapp.com/), and presents the most
+read links.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+To configure, run your standard clone, change of directories, and bundle, and
+migrate.
