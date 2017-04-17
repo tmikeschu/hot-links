@@ -21,13 +21,14 @@ RSpec.describe "Links API", type: :request do
 
     it "updates the count if the link exists" do
       db_link = create(:link, url: "http://turing.io")
+      old_count = db_link.read_count
         
       link = { link: { url: "http://turing.io" } }
       post "/api/v1/links", params: link
 
       db_link.reload
 
-      expect(db_link.read_count).to eq 2
+      expect(db_link.read_count).to eq old_count + 1
     end
   end
 end
