@@ -1,0 +1,12 @@
+<section class="hot-links">
+  <h1>Hot Links!</h1>
+  <ul>
+    <% @links.each_with_index do |link, index| %>
+      <li id="link#{link.id}">
+        <%= "#{index + 1}. #{link.url}" %>
+      </li>
+    <% end %>
+  </ul>
+  <img src="https://media.giphy.com/media/QqostCXAat440/giphy.gif"/>
+</section>
+
