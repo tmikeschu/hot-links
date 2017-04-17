@@ -37,6 +37,7 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'faker'
 gem 'factory_girl_rails'
+gem 'rack-cors', :require => 'rack/cors'
 
 group :development, :test do
   gem 'rspec-rails'
@@ -47,10 +48,8 @@ group :development, :test do
   gem 'spring'
   gem 'database_cleaner'
   gem 'better_errors'
-  gem 'factory_girl_rails'
   gem 'shoulda-matchers'
   gem 'selenium-webdriver', '~> 2.53.4'
-  gem 'faker'
 end
 
 group :development do
