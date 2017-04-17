@@ -31,4 +31,16 @@ RSpec.describe "Links API", type: :request do
       expect(db_link.read_count).to eq old_count + 1
     end
   end
+
+  describe "GET api/v1/hottest_links" do
+    it "returns the 10 hottest links" do
+      create_list(:link, 15)
+      get "/api/v1/hottest_links" 
+
+      expect(response).to be_success
+
+      json_links = JSON.parse(response.body, symbolize_names: true)
+      expect(json_links.count).to eq 10
+    end
+  end
 end
