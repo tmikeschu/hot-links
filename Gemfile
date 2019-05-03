@@ -38,6 +38,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'faker'
 gem 'factory_girl_rails'
 gem 'rack-cors', :require => 'rack/cors'
+gem "factory_bot_rails"
 
 group :development, :test do
   gem 'rspec-rails'

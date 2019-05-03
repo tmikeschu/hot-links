@@ -1,6 +1,6 @@
-FactoryGirl.define do
+FactoryBot.define do
   factory :link do
     url { Faker::Internet.url }
-    read_count { 1 + rand(20) }
+    read_count { rand(1..20) }
   end
 end
